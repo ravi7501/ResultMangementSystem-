@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Form</title>
+    <style type="text/css">
+        body{
+            font-weight: 200;
+            font-size: 14px;
+            font-family:'Poppins',sans-seriff;
+            background-color: lightpink;
+        }
+        nav{
+            flex:1;
+            text-align: center;
+            color: black;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav ul{
+            display:inline-block;
+            list-style-type:none;
+        }
+        .navbar{
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        form{
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:8000/admin/"><b>Admin</b></a> 
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1 style="padding: 5px; font-size: 18px; text-align: center;"> PRIMATHINK UNIVERSITY RESULT PORTAL</h1>
+
+    <form action = "request" >
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+</body>
+</html>

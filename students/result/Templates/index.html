@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style type="text/css">
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            font-size: 14px;
+            }
+        .title{
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+
+        }
+        .title_name{
+            font-size: 18px;
+            font-weight: 100;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        .middle{
+            font-size: 16px;
+            font-weight: 100;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        table,th,td{
+            border: 1px solid black;
+            text-align: center;
+            height: "32" ;
+            font-family: Verdana, Geneva, sans-serif;
+            font-weight:600;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title"><h1><b>PRIMATHINK UNIVERSITY </b></h1></div>
+    <div class="title_name"><b>Sl_No:&nbsp;{{data.Sr_No}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAME:&nbsp;{{data.Name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Division:&nbsp;{{data.Division}}</b> </div>
+    <br>
+    <table>
+        <tr>
+          <th>Accountancy</th>
+          <th>English</th>
+          <th>Maths</th>
+          <th>Economics</th>
+          <th>Business_Studies</th>
+        </tr>
+    
+        <tr>
+          <th> {{ data.Accountancy }}</th>
+          <th> {{ data.English }}</th>
+          <th> {{ data.Maths }}</th>
+          <th> {{ data.Economics }}</th>
+          <th>{{data.Business_Studies}}</th>
+        </tr> 
+        
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="middle"><b>Total Obtain Out Of 500: &nbsp;{{data.Total}}</b>
+        <br>
+        <b>Average: &nbsp;{{data.Average}}</b>&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Grades:&nbsp;{{data.Grade}}</b>
+        <br>
+        <b>Result:&nbsp;{{data.Result}}</b>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 style="text-align: center;"><b > This is Computer Genrated result DoesNot Required Signature</b></h3>
+
+
+      
+
+    
+
+     
+
+
+</body>
+</html>
+ 
